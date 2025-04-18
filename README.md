@@ -2,4 +2,4 @@
 
 ## using API https://www.weatherapi.com/ to get weather state of input country
 
-<img href="./Weather.jpg" alt="Demo" />
+<img src="./Weather.jpg" alt="Demo" />
