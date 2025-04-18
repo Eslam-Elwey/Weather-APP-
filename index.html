@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Weather</title>
+    <link rel="icon" href="images/sun.png" />
+  </head>
+
+  <body>
+    <!-- nav-bar  -->
+    <div class="container-fluid nav-bg p-4">
+      <div class="container position-relative">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="logo">
+                      <img src="./images/logo@2x.png" class="w-75" alt="Logo" />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="logo-detail text-white">
+                      <h1 class="">Weateher</h1>
+                      <p class="fw-normal fa-sm">tagline goeshere</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse float-lg-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active active-item"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-item" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-item" href="#">Live Cameras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-item" href="#">Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-item" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- hero Section  -->
+
+    <div class="container-fluid hero">
+      <div class="container">
+        <form class="find_location">
+          <input
+            type="text"
+            placeholder="Find Your Location..."
+            class="form-control"
+            id="location"
+          />
+          <input type="button" value="find" id="submitFind" class="btn-info" />
+        </form>
+      </div>
+    </div>
+
+    <div class="weather-table p-5 position-relative container-fluid">
+      <div class="container position-absolute">
+        <div class="row g-0 text-white mx-auto" id="weather"></div>
+        <div class="time text-white my-3 mx-auto">
+          <h3>Time : <span id="time"></span></h3>  </div>
+      </div>
+    </div>
+
+    <div class="footer bg-dark">
+      <div class="fillbg"></div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
